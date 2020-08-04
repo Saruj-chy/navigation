@@ -5,9 +5,25 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 
 class HomeScreen extends Component {
 
-  // static navigationOptions = {
-  //   title: 'Home',
-  // }
+  static navigationOptions = ({ navigation }) => {
+    return {
+      headerLeft: (
+        <Button
+
+          title="B"
+          onPress={() => navigation.navigate('Users')}
+        />
+      ),
+      headerRight: (
+        <Button
+
+          title="R"
+          onPress={() => navigation.navigate('Users')}
+        />
+      )
+
+    }
+  }
 
   render() {
     return (
