@@ -4,6 +4,19 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 
 class UserScreen extends Component {
+
+  static navigationOptions = {
+    title: 'User',
+    headerStyle: {
+      backgroundColor: '#f4511e'
+    },
+    headerTintColor: 'blue',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      color: 'green',
+    },
+  }
+
   render() {
 
     const userId = this.props.navigation.getParam('userId', 'N/A');

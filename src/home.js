@@ -4,6 +4,11 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 
 class HomeScreen extends Component {
+
+  // static navigationOptions = {
+  //   title: 'Home',
+  // }
+
   render() {
     return (
       <View style={{
@@ -19,7 +24,7 @@ class HomeScreen extends Component {
           onPress={
             () => this.props.navigation.navigate('Users', {
               userId: 12,
-              userName: 'Francis',
+              userName: 'Saruj',
               userLastName: 'Jones',
             })
           }

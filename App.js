@@ -11,7 +11,23 @@ const AppNavigator = createStackNavigator({
   Users: UserScreen,
 },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: 'green'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        flex: 1,
+        textAlign: 'center'
+
+      },
+    },
+    // headerMode: 'none',
+    // onTransitionStart: () => {
+    //   alert('start')
+    // }
   }
 )
 
