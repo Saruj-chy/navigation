@@ -36,6 +36,10 @@ class HomeScreen extends Component {
       >
         <Text> Home Screen </Text>
         <Button
+          title="Go to Side Drawer"
+          onPress={() => this.props.navigation.openDrawer()}
+        />
+        <Button
           title="Go to Users"
           onPress={
             () => this.props.navigation.navigate('Users', {

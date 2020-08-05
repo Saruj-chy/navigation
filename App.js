@@ -12,7 +12,17 @@ import LogoTitle from './src/logo';
 const AppNavigator = createDrawerNavigator({
   Home: HomeScreen,
   Users: UserScreen
-})
+}, {
+  drawerWidth: 100,
+  drawerPosition: 'right',
+  drawerBackgroundColor: 'green',
+  drawerType: 'front',
+  contentOptions: {
+    activeBackgroundColor: 'blue',
+    activeTintColor: 'red'
+  }
+}
+)
 
 
 
